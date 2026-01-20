@@ -18,7 +18,7 @@ export default function UpdatesCTA() {
           />
           <button
             type="submit"
-            className="rounded-md bg-neutral-900 px-6 py-3 text-white hover:bg-neutral-800 transition"
+            className="rounded-md bg-neutral-900 px-6 py-3 text-white hover:bg-neutral-800 hover :scale-105 transition duration-300 ease-in-out"
           >
             Get updates
           </button>

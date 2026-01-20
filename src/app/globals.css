@@ -1,8 +1,49 @@
-/* Tailwind CSS Global Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Base page feel */
 body {
-  background: red !important;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Fade in on scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Yellow flourish animation */
+.flourish {
+  position: relative;
+  display: inline-block;
+}
+
+.flourish::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 14px;
+  height: 3px;
+  background-color: #facc15; /* yellow-400 */
+  border-radius: 999px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  animation: flourish-draw 0.6s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes flourish-draw {
+  to {
+    transform: translateX(-50%) scaleX(1);
+  }
 }

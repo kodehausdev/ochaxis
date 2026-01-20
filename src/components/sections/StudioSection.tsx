@@ -1,28 +1,45 @@
 export default function StudioSection() {
   return (
-    <section className="bg-neutral-100 px-6 py-28">
-      <div className="max-w-6xl mx-auto grid gap-16 md:grid-cols-2 items-center">
-        
-        {/* Image placeholder */}
-        <div className="aspect-[4/5] bg-neutral-300 rounded-xl" />
+    <section id="studio" className="fade-in px-6 py-24 max-w-7xl mx-auto">
+      {/* Header Section */}
+      <div className="mb-12">
+        <h2 className="text-3xl font-serif mb-6">The Studio</h2>
+        <p className="max-w-xl text-neutral-700">
+          We work through real projects, real materials, and real constraints.
+        </p>
+      </div>
 
-        {/* Text */}
-        <div>
-          <h2 className="text-3xl font-serif text-neutral-900">
+      {/* Content Grid */}
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* Image */}
+        <div className="relative group overflow-hidden rounded-2xl fade-in visible">
+          <img
+            src="/images/studio-1.jpg"
+            alt="Ochaxis studio"
+            className="w-full h-[500px] object-cover grayscale-[30%] 
+                       group-hover:grayscale-0 
+                       group-hover:scale-105 
+                       transition duration-700 ease-out"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-neutral-900/10 
+                          group-hover:bg-neutral-900/0 
+                          transition duration-700" />
+        </div>
+
+        {/* Text Content */}
+        <div className="fade-in visible">
+          <h2 className="text-4xl font-serif font-semibold text-neutral-900">
             The Studio
           </h2>
-
-          <p className="mt-6 text-lg text-neutral-800 leading-relaxed">
-            This is where I teach interior design as it is practiced.
+          <p className="mt-6 text-neutral-700 leading-relaxed">
+            I design interiors that are calm, functional, and intentional.
           </p>
-
-          <p className="mt-6 text-lg text-neutral-800 leading-relaxed">
-            We work through real projects, real materials, and real decisions.
+          <p className="mt-4 text-neutral-700 leading-relaxed">
+            I also teach interior design, not from a pedestal, but from practice.
           </p>
-
-          <p className="mt-6 text-lg text-neutral-800 leading-relaxed">
-            You don’t get told what to do.  
-            We talk through why things work, and when they don’t.
+          <p className="mt-4 text-neutral-700 leading-relaxed">
+            This studio is a place to learn, ask questions, and build real skill.
           </p>
         </div>
       </div>
