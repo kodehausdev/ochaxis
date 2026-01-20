@@ -1,8 +1,8 @@
 export default function InvitationSection() {
   return (
-    <section className="px-6 py-32">
+    <section className="fade-in px-6 py-28">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-serif text-neutral-900">
+        <h2 className="text-3xl font-serif mb-6">
           Step into the studio
         </h2>
 

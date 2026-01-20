@@ -1,5 +1,8 @@
+import StudioImage from "@/components/ui/StudioImage";
+
 export default function StudioSection() {
   return (
+<<<<<<< Updated upstream
     <section id="studio" className="fade-in px-6 py-24 max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="mb-12">
@@ -12,7 +15,7 @@ export default function StudioSection() {
       {/* Content Grid */}
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Image */}
-        <div className="relative group overflow-hidden rounded-2xl fade-in visible">
+        <div className="studio-image object-cover grayscale-[20%] contrast-[1.05]">
           <img
             src="/images/studio-1.jpg"
             alt="Ochaxis studio"
@@ -31,17 +34,26 @@ export default function StudioSection() {
         <div className="fade-in visible">
           <h2 className="text-4xl font-serif font-semibold text-neutral-900">
             The Studio
+=======
+    <section className="fade-in section">
+      <div className="container grid gap-12 lg:grid-cols-2 items-center">
+        
+        <div>
+          <h2 className="text-3xl font-serif mb-4">
+            Inside the Studio
+>>>>>>> Stashed changes
           </h2>
-          <p className="mt-6 text-neutral-700 leading-relaxed">
-            I design interiors that are calm, functional, and intentional.
-          </p>
-          <p className="mt-4 text-neutral-700 leading-relaxed">
-            I also teach interior design, not from a pedestal, but from practice.
-          </p>
-          <p className="mt-4 text-neutral-700 leading-relaxed">
-            This studio is a place to learn, ask questions, and build real skill.
+          <p className="text-neutral-700 max-w-md">
+            This is where questions are allowed.
+            Where sketches fail.
+            Where design becomes practice.
           </p>
         </div>
+
+        <StudioImage
+          src="/images/studio-session.jpg"
+          alt="Students working in the Ochaxis studio"
+        />
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-neutral-50 px-6 py-20 border-t border-neutral-200">
+    <footer className="px-6 py-16 border-t border-neutral-200">
       <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-3 text-sm text-neutral-700">
         
         {/* Studio */}
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-16 text-center text-xs text-neutral-500">
+      <div className="max-w-6xl mx-auto mt-12 text-center text-sm text-neutral-500">
         © {new Date().getFullYear()} Ochaxis. All rights reserved.
       </div>
     </footer>

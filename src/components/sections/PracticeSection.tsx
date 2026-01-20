@@ -20,7 +20,7 @@ export default function PracticeSection() {
   return (
     <section className="px-6 py-28 bg-white">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-serif font-semibold text-neutral-900">
+        <h2 className="text-3xl font-serif text-neutral-900">
           Practice
         </h2>
 
