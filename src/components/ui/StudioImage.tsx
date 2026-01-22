@@ -7,7 +7,7 @@ type StudioImageProps = {
 
 export default function StudioImage({ src, alt }: StudioImageProps) {
   return (
-    <div className="relative overflow-hidden rounded-xl bg-neutral-100">
+    <div className="studio-image object-cover grayscale-[20%] contrast-[1.05]">
       <Image
         src={src}
         alt={alt}

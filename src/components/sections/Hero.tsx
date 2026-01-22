@@ -6,7 +6,7 @@ export default function Hero() {
         <img
           src="/images/studio-bg.jpg"
           alt="Studio background"
-          className="w-full h-full object-cover opacity-25"
+          className="w-full h-full object-cover opacity-675"
         />
       </div>
 

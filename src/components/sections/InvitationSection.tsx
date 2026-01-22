@@ -6,7 +6,7 @@ export default function InvitationSection() {
           Step into the studio
         </h2>
 
-        <p className="mt-8 text-lg text-neutral-700 leading-relaxed">
+        <p className="max-w-xl text-neutral-700">
           If you’re curious about interior design and want to explore it through
           real work, you’re welcome here.
         </p>
