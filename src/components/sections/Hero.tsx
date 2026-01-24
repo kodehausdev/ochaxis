@@ -1,33 +1,22 @@
 export default function Hero() {
   return (
-    <section className="relative px-6 py-32 bg-neutral-50 overflow-hidden">
-      {/* Soft studio background */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/images/studio-bg.jpg"
-          alt="Studio background"
-          className="w-full h-full object-cover opacity-675"
-        />
-      </div>
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      {/* background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-50 via-neutral-100 to-neutral-50" />
 
-      {/* Hero content */}
-      <div className="max-w-3xl mx-auto text-center fade-in visible">
-        <h1 className="text-6xl md:text-7xl font-serif font-bold text-neutral-900 inline-block">
-          Ocha
-          <span className="flourish mx-1">
-            <span className="text-yellow-400">x</span>
-          </span>
-          is
+      {/* content */}
+      <div className="relative text-center px-6">
+        <h1 className="text-5xl md:text-6xl font-serif mb-6">
+          Ochaxis
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-neutral-700 leading-relaxed">
-          Interior Design • Teaching • Studio Practice
+        <p className="text-neutral-700 mb-8">
+          Interior Design · Teaching · Studio Practice
         </p>
 
         <a
           href="#studio"
-          className="mt-10 inline-block rounded-md bg-neutral-900 px-8 py-3 text-white font-medium
-                     hover:bg-neutral-800 hover:scale-105 transition duration-300 ease-in-out"
+          className="inline-block text-sm underline underline-offset-4 text-neutral-800 hover:text-neutral-900"
         >
           Explore the Studio
         </a>
