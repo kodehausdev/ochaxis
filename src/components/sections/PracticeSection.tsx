@@ -10,16 +10,19 @@ export default function PracticeSection() {
           <PracticeCard
             title="Projects"
             description="Extended studio work where ideas are tested through real materials, constraints, and iteration."
+            image="/images/studio-project.jpg"
           />
 
           <PracticeCard
             title="Challenges"
             description="Short prompts designed to sharpen decision-making, speed, and clarity."
+            image="/images/studio-challenge.jpg"
           />
 
           <PracticeCard
             title="Workshops"
             description="Focused sessions led through conversation, observation, and shared making."
+            image="/images/studio-workshop.jpg"
           />
         </div>
       </div>
@@ -29,17 +32,29 @@ export default function PracticeSection() {
 
 function PracticeCard({
   title,
-  description
+  description,
+  image,
 }: {
   title: string;
   description: string;
+  image: string;
 }) {
   return (
-    <div className="rounded-xl border border-neutral-200 bg-white p-6 transition hover:border-neutral-300">
-      <h3 className="text-xl font-medium mb-3">{title}</h3>
-      <p className="text-neutral-700 text-sm leading-relaxed">
-        {description}
-      </p>
+    <div className="rounded-xl border border-neutral-200 bg-white overflow-hidden transition hover:border-neutral-300">
+      <div className="aspect-[4/3] bg-neutral-100">
+        <img
+          src={image}
+          alt={title}
+          className="h-full w-full object-cover grayscale hover:grayscale-0 transition"
+        />
+      </div>
+
+      <div className="p-6">
+        <h3 className="text-xl font-medium mb-3">{title}</h3>
+        <p className="text-neutral-700 text-sm leading-relaxed">
+          {description}
+        </p>
+      </div>
     </div>
   );
 }
