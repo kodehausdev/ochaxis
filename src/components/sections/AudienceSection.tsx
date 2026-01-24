@@ -1,8 +1,8 @@
 export default function AudienceSection() {
   return (
-    <section className="px-6 py-28">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-serif text-neutral-900">
+    <section className="py-24">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2 className="text-3xl font-serif mb-4">
           This studio is for you if…
         </h2>
 
@@ -20,7 +20,7 @@ export default function AudienceSection() {
             <h3 className="text-lg font-medium text-neutral-900">
               You learn by doing
             </h3>
-            <p className="mt-4 text-neutral-700 leading-relaxed">
+            <p className="text-neutral-700 leading-relaxed">
               You’re okay making mistakes, asking questions, and figuring things out.
             </p>
           </div>

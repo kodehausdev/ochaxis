@@ -1,6 +1,6 @@
 export default function PracticeSection() {
   return (
-    <section className="fade-in section bg-neutral-50">
+    <section className="py-24 px-6 bg-neutral-50">
       <div className="container">
         <h2 className="text-3xl font-serif mb-10">
           Practice

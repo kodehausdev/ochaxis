@@ -2,8 +2,8 @@ import StudioImage from "@/components/ui/StudioImage";
 
 export default function StudioSection() {
   return (
-    <section className="fade-in section">
-      <div className="container grid gap-12 lg:grid-cols-2 items-center">
+    <section className="py-24 px-6">
+      <div className="max-w-3xl mx-auto grid gap-16 md:grid-cols-2 md:items-center">
         
         <div>
           <h2 className="text-3xl font-serif mb-4">
